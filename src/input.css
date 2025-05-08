@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+.test{
+    background-image: url(../img/space.avif);
+    width: 100px;
+    height: 100px;
+}
