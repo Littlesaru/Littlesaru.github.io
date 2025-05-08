@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#121615]">
+    <nav
+      class="flex flex-row p-7 xl:items-center justify-between relative  items-center content-center"
+    >
+      <div class="text-white text-2xl">My Portfolio</div>
+
+      <!-- Grouped menu icon + dropdown -->
+      <div class="relative xl:hidden mt-3">
+        
+        <!-- Menu icon -->
+        <div class="hover:cursor-pointer" onclick="toggleMenu()">
+          <img src="../img/menu.svg" alt="menu" />
+        </div>
+
+        <div
+          id="dropdownMenu"
+          class="hidden flex-col gap-3 text-white absolute top-full left-0 bg-[#1d1f1e] border border-white py-4 w-48 z-50 rounded-lg shadow-lg transition-all duration-500"
+        >
+          <a
+            href="index.html"
+            class="text-sm block px-2 py-1 rounded hover:bg-white hover:text-black transition"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-sm block px-2 py-1 rounded hover:bg-white hover:text-black transition"
+            >About</a
+          >
+          <a
+            href="#"
+            class="text-sm block px-2 py-1 rounded hover:bg-white hover:text-black transition"
+            >Skills</a
+          >
+          <a
+            href="#"
+            class="text-sm block px-2 py-1 rounded hover:bg-white hover:text-black transition"
+            >Projects</a
+          >
+        </div>
+      </div>
+
+      <!-- Normal horizontal menu for large screens -->
+      <div class="hidden xl:flex flex-row gap-5 text-white xl:mt-0">
+        <a href="index.html" class="text-lg hover:underline">Home</a>
+        <a href="#" class="text-lg hover:underline">About</a>
+        <a href="#" class="text-lg hover:underline">Skills</a>
+        <a href="#" class="text-lg hover:underline">Projects</a>
+      </div>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("dropdownMenu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
