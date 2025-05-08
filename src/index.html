@@ -8,13 +8,14 @@
   </head>
   <body class="bg-[#121615]">
     <nav
-      class="flex flex-row p-7 xl:items-center justify-between relative  items-center content-center"
+      class="flex flex-row p-7 justify-between relative items-center content-center bg-[#0D0D0D]"
     >
       <div class="text-white text-2xl">My Portfolio</div>
 
       <!-- Grouped menu icon + dropdown -->
-      <div class="relative xl:hidden mt-3">`
-      
+      <div class="flex items-center relative xl:hidden mt-3">
+        
+
         <!-- Menu icon -->
         <div class="hover:cursor-pointer" onclick="toggleMenu()">
           <img src="../img/menu.svg" alt="menu" />
@@ -22,7 +23,7 @@
 
         <div
           id="dropdownMenu"
-          class="hidden flex-col gap-3 text-white absolute top-full left-0 bg-[#1d1f1e] border border-white py-4 w-48 z-50 rounded-lg shadow-lg transition-all duration-500"
+          class="hidden w-fit flex-col gap-3 text-white absolute top-full right-0 bg-[#1d1f1e] border border-white py-4 z-50 rounded-lg shadow-lg transition-all duration-500"
         >
           <a
             href="index.html"
@@ -48,7 +49,7 @@
       </div>
 
       <!-- Normal horizontal menu for large screens -->
-      <div class="hidden xl:flex flex-row gap-5 text-white xl:mt-0">
+      <div class="hidden xl:flex flex-row gap-5 text-white">
         <a href="index.html" class="text-lg hover:underline">Home</a>
         <a href="#" class="text-lg hover:underline">About</a>
         <a href="#" class="text-lg hover:underline">Skills</a>

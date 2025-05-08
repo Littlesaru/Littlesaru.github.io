@@ -8,7 +8,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-200: oklch(92.4% 0.12 95.746);
-    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -16,13 +15,9 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --radius-lg: 0.5rem;
-    --radius-xl: 0.75rem;
-    --radius-2xl: 1rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -184,20 +179,20 @@
   .top-full {
     top: 100%;
   }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
   .z-50 {
     z-index: 50;
   }
-  .mx-11 {
-    margin-inline: calc(var(--spacing) * 11);
-  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
-  .mt-9 {
-    margin-top: calc(var(--spacing) * 9);
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
   }
   .block {
     display: block;
@@ -213,6 +208,9 @@
   }
   .w-48 {
     width: calc(var(--spacing) * 48);
+  }
+  .w-fit {
+    width: fit-content;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -235,9 +233,6 @@
   .justify-between {
     justify-content: space-between;
   }
-  .justify-center {
-    justify-content: center;
-  }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
@@ -257,20 +252,14 @@
   .border-white {
     border-color: var(--color-white);
   }
+  .bg-\[\#0D0D0D\] {
+    background-color: #0D0D0D;
+  }
   .bg-\[\#1d1f1e\] {
     background-color: #1d1f1e;
   }
   .bg-\[\#121615\] {
     background-color: #121615;
-  }
-  .bg-amber-200 {
-    background-color: var(--color-amber-200);
-  }
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
-  }
-  .p-6 {
-    padding: calc(var(--spacing) * 6);
   }
   .p-7 {
     padding: calc(var(--spacing) * 7);
@@ -283,6 +272,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
   }
   .text-2xl {
     font-size: var(--text-2xl);
