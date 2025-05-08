@@ -6,57 +6,45 @@
     <title>Home Page</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-[#121615]">
-    <nav
-      class="flex flex-row p-7 justify-between relative items-center content-center bg-[#0D0D0D]"
-    >
-      <div class="text-white text-2xl">My Portfolio</div>
-
-      <!-- Grouped menu icon + dropdown -->
-      <div class="flex items-center relative xl:hidden mt-3">
-        
-
-        <!-- Menu icon -->
-        <div class="hover:cursor-pointer" onclick="toggleMenu()">
-          <img src="../img/menu.svg" alt="menu" />
+  <body class="relative">
+      <nav class="sticky flex flex-row justify-between content-center items-center bg-amber-800 p-7">
+        <!-- Logo -->
+        <div>
+          <h1 class="text-3xl text-white">Logo</h1>
         </div>
 
-        <div
-          id="dropdownMenu"
-          class="hidden w-fit flex-col gap-3 text-white absolute top-full right-0 bg-[#1d1f1e] border border-white py-4 z-50 rounded-lg shadow-lg transition-all duration-500"
-        >
-          <a
-            href="index.html"
-            class="text-sm block px-2 py-1 rounded hover:bg-white hover:text-black transition"
-            >Home</a
-          >
-          <a
-            href="#"
-            class="text-sm block px-2 py-1 rounded hover:bg-white hover:text-black transition"
-            >About</a
-          >
-          <a
-            href="#"
-            class="text-sm block px-2 py-1 rounded hover:bg-white hover:text-black transition"
-            >Skills</a
-          >
-          <a
-            href="#"
-            class="text-sm block px-2 py-1 rounded hover:bg-white hover:text-black transition"
-            >Projects</a
-          >
+        <!-- Link Section -->
+        <div class="flex flex-row justify-center content-center items-center gap-10">
+          <a href="" class="text-xl text-white hover:underline ">Home</a>
+          <a href="" class="text-xl text-white hover:underline">Skills</a>
+          <a href="" class="text-xl text-white hover:underline">Projects</a>
+          <div class="flex border-3 p-2 rounded-full">
+            <a href="" class="text-xl text-white hover:underline">
+              <img src="../img/github.svg" alt="github" class="size-6">
+            </a>
+          </div>
+
+          <div class="flex border-3 p-2 rounded-full">
+            <a href="" class="text-xl text-white hover:underline">
+              <img src="../img/facebook.svg" alt="facebook" class="size-6">
+            </a>
+          </div>
+
+          <div class="flex border-3 p-2 rounded-full">
+            <a href="" class="text-xl text-white hover:underline">
+              <img src="../img/instagram.svg" alt="instagram" class="size-6">
+            </a>
+          </div>
         </div>
-      </div>
+      </nav>
 
-      <!-- Normal horizontal menu for large screens -->
-      <div class="hidden xl:flex flex-row gap-5 text-white">
-        <a href="index.html" class="text-lg hover:underline">Home</a>
-        <a href="#" class="text-lg hover:underline">About</a>
-        <a href="#" class="text-lg hover:underline">Skills</a>
-        <a href="#" class="text-lg hover:underline">Projects</a>
-      </div>
-    </nav>
-
+      <!-- Home -->
+    <main>
+      <!-- Home -->
+      <!-- Skills -->
+      <!-- About Us -->
+      <!-- Projects -->
+    </main>
     <script src="../js/functions.js"></script>
   </body>
 </html>
