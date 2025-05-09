@@ -1,7 +1,10 @@
-@import "tailwindcss";
+@import "../node_modules/tailwindcss/index.css";
 
-.test{
-    background-image: url(../img/space.avif);
-    width: 100px;
-    height: 100px;
+@font-face {
+    font-family: Eotg;
+    src: url(../Font/EdgeOfTheGalaxyRegular-OVEa6.otf);
+}
+
+@theme{
+    --font-eotg:'EOTG';
 }
