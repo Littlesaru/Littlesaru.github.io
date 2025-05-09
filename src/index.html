@@ -7,14 +7,14 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body
-    class="relative w-[100%] h-fit"
+    class="relative w-[100%] h-fit "
   >
     <nav
       class="fixed w-full flex flex-row justify-between content-center items-center p-7 bg-black/50 backdrop-blur-2xl"
     >
       <!-- Logo -->
       <div>
-        <h1 class="text-3xl text-white">Logo</h1>
+        <h1 class="px-[80px] text-4xl text-white">Logo</h1>
       </div>
 
       <!-- Link Section -->
@@ -24,45 +24,47 @@
         <a href="" class="text-xl text-white hover:underline">Home</a>
         <a href="" class="text-xl text-white hover:underline">Skills</a>
         <a href="" class="text-xl text-white hover:underline">Projects</a>
-        <div class="flex border-3 p-2 rounded-full">
+        <div class="flex border-3 bg-gradient-to-r from-blue-500 to-purple-600 p-2 rounded-full hover:border-white">
           <a href="" class="text-xl text-white hover:underline">
             <img src="../img/github.svg" alt="github" class="size-6" />
           </a>
         </div>
 
-        <div class="flex border-3 p-2 rounded-full">
+        <div class="flex border-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:border-white p-2 rounded-full">
           <a href="" class="text-xl text-white hover:underline">
             <img src="../img/facebook.svg" alt="facebook" class="size-6" />
           </a>
         </div>
 
-        <div class="flex border-3 p-2 rounded-full">
+        <div class="flex border-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:border-white p-2 rounded-full">
           <a href="" class="text-xl text-white hover:underline">
             <img src="../img/instagram.svg" alt="instagram" class="size-6" />
           </a>
         </div>
       </div>
     </nav>
-    <main class=" bg-gradient-to-r from-blue-700 to-purple-900  flex items-center justify-between  bg-cover bg-no-repeat bg-center h-[80vh]">
+    
+    <main class="bg-[url('../img/star.jpg')] flex items-center justify-between bg-center h-[80vh]">
       <!-- Home -->
       <div class="flex w-full justify-between">
-        <div class="w-[500px] mx-[40px] py-[70px]">
+        <div class="flex flex-col gap-9 w-[650px] mx-[40px] py-[70px] px-[70px]">
           <h1
-            class="text-white border-2 border-[#b345f7] w-fit px-[20px] py-[10px] bg-gradient-to-r from-blue-500 to-purple-600"
+            class="text-white text-3xl border-2 border-[#b345f7] w-fit px-[30px] py-[10px] bg-gradient-to-r from-blue-500 to-purple-600"
           >
             Welcome to my Portfolio
           </h1>
-          <h1 class="text-white text-[30px] font-extrabold">
-            Hi! I'm Judy Web Designer
+          <h1 class="text-white text-5xl font-extrabold tracking-[0.9px] leading-15">
+            Hi! I'm Junior Web Developer
           </h1>
-          <p class="text-white">
+          <p class="text-white text-xl tracking-[0.9px]">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quis
             neque nulla ipsam totam voluptas dolore earum, magnam quasi, libero
             consequuntur dicta necessitatibus laudantium tempore ipsa laboriosam
             sit perferendis dolores.
           </p>
         </div>
-        <div>
+
+        <div class="mx-[40px] py-[70px] px-[130px]">
           <img src="../img/spaceIcon.png" alt="spaceIcon" />
         </div>
       </div>
@@ -70,14 +72,14 @@
     <!-- Home End-->
 
     <!-- Skills -->
-    <div class=" bg-black h-screen w-screen flex flex-col justify-center items-center">
+    <div class=" bg-[linear-gradient(to_right,_#000000,_#121212,_#060606)] p-6 flex flex-col justify-center items-center">
       <h1 class="text-[68px] text-white">Skills</h1>
       <p class=" text-white text-center text-2xl mx-[350px] my-[50px] leading-7 tracking-wide" >
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia a ullam dicta
            dolores reiciendis! Necessitatibus iste vel atque vero quia perferendis laborum. 
            Nulla magnam magni ab laudantium autem dicta delectus!
       </p>
-      <div class="flex flex-row gap-10 mt-5">
+      <div class="flex flex-row gap-10 mt-5 justify-center items-center">
 
           <!-- HTML Icon -->
           <div class="p-[20px] rounded-full bg-gradient-to-r from-purple-600 to-blue-900 hover:bg-gradient-to-r hover:from-blue-900 hover:to-purple-600 transition-all duration-500 transform hover:scale-110  cursor-pointer">
@@ -93,8 +95,6 @@
               </div>
             </div>
             
-
-        
           <!-- JS Icon -->
           <div class="p-[20px] rounded-full bg-gradient-to-r from-purple-600 to-blue-900 hover:bg-gradient-to-r hover:from-blue-900 hover:to-purple-600 transition-all duration-500 transform hover:scale-110 cursor-pointer">
             <div class="bg-white p-[54px] rounded-full">
@@ -114,7 +114,12 @@
             <img class="rounded-[20px]" src="../img/tailwindcss-icon-svgrepo-com.svg" alt="" width="70px" height="70px">
           </div>
         </div>
-        <!-- Skills End-->
+      </div>
+      <!-- Skills End-->
+
+      <!-- About -->
+      
+      <!-- About End-->
     <script src="../js/functions.js"></script>
   </body>
 </html>
