@@ -5,12 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <style>
+      .swiper{
+        padding: 10px 7 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        font-size: 24px;
+        color: azure;
+        padding: 20px 80px;
+        gap: 50px;
+      }
+    </style>
   </head>
   <body
     class="relative w-[100%] h-fit bg-[linear-gradient(to_right,_#000000,_#121212,_#060606)]"
   >
     <nav
-      class="fixed w-full flex flex-row justify-between content-center items-center p-7 bg-gradient-to-r from-blue-900/50 to-blue-400/50 backdrop-blur-2xl"
+      class="fixed z-50 w-full flex flex-row justify-between content-center items-center p-7 bg-gradient-to-r from-blue-500/40 to-purple-600/50 backdrop-blur-2xl"
     >
       <!-- Logo -->
       <div>
@@ -70,9 +91,7 @@
     >
       <!-- Home -->
       <div class="flex w-full justify-between pt-[75px]">
-        <div
-          class="flex flex-col gap-9 w-[650px] mx-[40px] p-[30px]"
-        >
+        <div class="flex flex-col gap-9 w-[650px] mx-[40px] p-[30px]">
           <h1
             class="text-white text-3xl tracking-[0.3rem] border-2 border-[#b345f7] w-fit px-[30px] py-[10px] bg-gradient-to-r from-blue-500 to-purple-600 font-eotg"
           >
@@ -279,8 +298,46 @@
     <!-- About End-->
 
     <!-- Projects -->
-    <div class="flex flex-row justify-center items-center bg-amber-400 p-10">
-      <h1>dssd</h1>
+    <h1 class="text-5xl text-white font-eotg tracking-[0.4rem] px-[70px] py-5">Projects</h1>
+    <!-- Swiper HTML -->
+    <div class="swiper">
+      <h1></h1>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div>
+            <img src="../img/star.jpg" alt="">
+          </div>
+          
+          <div class="bg-amber-300 w-[500px]">
+            <p class="text-white">sdsdsdsdsds</p>
+          </div>
+          
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <img src="../img/star.jpg" alt="">
+          </div>
+          
+          <div class="bg-red-300 w-[500px]">
+            <p class="text-white">sdsdsdsdsds</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div>
+            <img src="../img/star.jpg" alt="">
+          </div>
+          
+          <div class="bg-blue-300 w-[500px]">
+            <p class="text-white">sdsdsdsdsds</p>
+          </div>
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+      <!-- Add pagination/navigation if you want -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
     <!-- Projects End -->
 
@@ -325,18 +382,8 @@
       </form>
     </div>
     <!-- Contact Us End-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="../js/functions.js"></script>
   </body>
 </html>
-<script>
-  function sendEmail(e) {
-    e.preventDefault();
-    const name =
-      document.getElementById("name")?.value + "- Contact From Portfolio";
-    const body = document.getElementById("body")?.value;
-    const a = document.createElement("a");
-    a.target = "_blank";
-    a.href = `mailto:nimo.arrmann123@gmail.com?subject=${name}&body=${body}`;
-    a.click();
-  }
-</script>
+<!-- Swiper library -->
