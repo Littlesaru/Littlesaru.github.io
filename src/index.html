@@ -11,8 +11,21 @@
     />
 
     <style>
-      .swiper{
-        padding: 10px 7 0px;
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #1a1a1a;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+        border-radius: 4px;
+      }
+
+      .swiper {
+        padding: 20px 40px;
         display: flex;
         flex-direction: column;
         gap: 15px;
@@ -52,35 +65,20 @@
           class="text-xl text-white hover:underline font-de-valencia"
           >Skills</a
         >
-        <a
-          href="#about"
-          class="text-xl text-white hover:underline font-de-valencia"
-          >About</a
-        >
-        <a href="" class="text-xl text-white hover:underline font-de-valencia"
+        <a href="#project" class="text-xl text-white hover:underline font-de-valencia"
           >Projects</a
+        >
+        <a href="#contact-us" class="text-xl text-white hover:underline font-de-valencia"
+          >Contact Us</a
         >
         <div
           class="flex border-3 bg-gradient-to-r from-blue-500 to-purple-600 p-2 rounded-full hover:border-white"
         >
-          <a href="" class="text-xl text-white hover:underline">
+          <a
+            href="https://github.com/Littlesaru"
+            class="text-xl text-white hover:underline"
+          >
             <img src="../img/github.svg" alt="github" class="size-6" />
-          </a>
-        </div>
-
-        <div
-          class="flex border-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:border-white p-2 rounded-full"
-        >
-          <a href="" class="text-xl text-white hover:underline">
-            <img src="../img/facebook.svg" alt="facebook" class="size-6" />
-          </a>
-        </div>
-
-        <div
-          class="flex border-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:border-white p-2 rounded-full"
-        >
-          <a href="" class="text-xl text-white hover:underline">
-            <img src="../img/instagram.svg" alt="instagram" class="size-6" />
           </a>
         </div>
       </div>
@@ -109,14 +107,18 @@
           </p>
 
           <a
-            href="#"
+            href="#contact-us"
             class="text-white text-3xl tracking-[0.3rem] border-2 border-[#b345f7] w-fit px-[30px] py-[10px] bg-gradient-to-r from-blue-500 to-purple-600 font-eotg"
             >Contact Us ➡️</a
           >
         </div>
 
         <div class="mx-[40px] py-[130px] px-[130px]">
-          <img src="../img/spaceIcon.png" alt="spaceIcon" />
+          <img
+            src="../img/spaceIcon.png"
+            alt="spaceIcon"
+            class="animate-pulse"
+          />
         </div>
       </div>
     </main>
@@ -203,7 +205,7 @@
     <!-- Skills End-->
 
     <!-- About -->
-    <div class="p-10" id="about">
+    <!-- <div class="p-10" id="about">
       <div class="flex gap-4 px-[30px]">
         <h1 class="text-white text-5xl font-eotg tracking-[0.4rem]">
           Our Teams
@@ -212,7 +214,7 @@
       </div>
 
       <div class="px-[30px] grid grid-cols-3 gap-5 mt-[40px]">
-        <!-- Member 1 -->
+        Member 1
         <div
           class="bg-gradient-to-tr from-yellow-200 to-purple-300 p-[1px] rounded-2xl"
         >
@@ -239,7 +241,7 @@
             </p>
           </div>
         </div>
-        <!-- Member 2 -->
+        Member 2
         <div
           class="bg-gradient-to-tr from-yellow-200 to-purple-300 p-[1px] rounded-2xl"
         >
@@ -266,7 +268,7 @@
             </p>
           </div>
         </div>
-        <!-- Member 3 -->
+        Member 3
         <div
           class="bg-gradient-to-tr from-yellow-200 to-purple-300 p-[1px] rounded-2xl"
         >
@@ -294,44 +296,67 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- About End-->
+    </div> -->
+    <!-- About End -->
 
     <!-- Projects -->
-    <h1 class="text-5xl text-white font-eotg tracking-[0.4rem] px-[70px] py-5">Projects</h1>
+    <h1 class="text-5xl text-white font-eotg tracking-[0.4rem] px-[70px] py-5" id="project">
+      Projects
+    </h1>
     <!-- Swiper HTML -->
     <div class="swiper">
       <h1></h1>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div>
-            <img src="../img/star.jpg" alt="">
+            <img
+              src="../img/HomeLiving.jpg"
+              alt="D&G Home Living"
+              class="border-2 border-white-500 shadow-xl shadow-cyan-500/50 w-[1000px] h-[400px]"
+            />
           </div>
-          
-          <div class="bg-amber-300 w-[500px]">
-            <p class="text-white">sdsdsdsdsds</p>
+
+          <div class="w-[500px] flex flex-col content-center pt-15">
+            <h1 class="text-white text-3xl font-de-valencia px-5 py-3">
+              D&G Home Living
+            </h1>
+            <p
+              class="text-white px-5 py-3 font-de-valencia text-xl tracking-normal"
+            >
+              This website is for Home manufacturing company of D&G Home Living.
+              I built it by using HTML and Tailwind Css.
+            </p>
+            <a
+              href="https://github.com/Littlesaru/D-H-Home-Living"
+              class="mt-5 text-white text-sm px-3 py-2 border-2 border-white w-fit ml-5 rounded-2xl hover:bg-gradient-to-r from-blue-500 to-purple-600"
+              >More Details</a
+            >
           </div>
-          
         </div>
         <div class="swiper-slide">
           <div>
-            <img src="../img/star.jpg" alt="">
+            <img
+              src="../img/Work.jpg"
+              alt=""
+              class="border-2 border-white-500 shadow-xl shadow-cyan-500/50 w-[1000px] h-[400px]"
+            />
           </div>
-          
-          <div class="bg-red-300 w-[500px]">
-            <p class="text-white">sdsdsdsdsds</p>
+
+          <div class="w-[500px] flex flex-col content-center pt-15">
+            <h1 class="text-white text-3xl font-de-valencia px-5 py-3">
+              UI/UX Design Company
+            </h1>
+            <p
+              class="text-white px-5 py-3 font-de-valencia text-xl tracking-normal"
+            >
+              This is my first project where I designed a responsive website for
+              a UI/UX company. The site was built using HTML, Tailwind CSS and
+              JavaScript. Due to company confidentiality, I am unable to share
+              additional images or detailed information about this project.
+            </p>
           </div>
         </div>
 
-        <div class="swiper-slide">
-          <div>
-            <img src="../img/star.jpg" alt="">
-          </div>
-          
-          <div class="bg-blue-300 w-[500px]">
-            <p class="text-white">sdsdsdsdsds</p>
-          </div>
-        </div>
         <!-- Add more slides as needed -->
       </div>
       <!-- Add pagination/navigation if you want -->
@@ -343,7 +368,7 @@
 
     <!-- Contact Us -->
     <div
-      class="flex p-10 flex-col justify-center items-center bg-[url('../img/star.jpg')]"
+      class="flex p-10 flex-col justify-center items-center bg-[url('../img/star.jpg')]" id="contact-us"
     >
       <form
         onsubmit="sendEmail(event)"
