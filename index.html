@@ -1,414 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link href="output.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-
-    <style>
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-
-      ::-webkit-scrollbar-track {
-        background: #1a1a1a;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
-        border-radius: 4px;
-      }
-
-      .swiper {
-        padding: 20px 40px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-      }
-
-      .swiper-slide {
-        display: flex;
-        font-size: 24px;
-        color: azure;
-        padding: 20px 80px;
-        gap: 50px;
-      }
-    </style>
-  </head>
-  <body
-    class="relative w-[100%] h-fit bg-[linear-gradient(to_right,_#000000,_#121212,_#060606)]"
-  >
-    <nav
-      class="fixed z-50 w-full flex flex-row justify-between content-center items-center p-7 bg-gradient-to-r from-blue-500/40 to-purple-600/50 backdrop-blur-2xl"
-    >
-      <!-- Logo -->
-      <div>
-        <h1 class="px-[50px] text-4xl text-white font-eotg tracking-[0.4rem]">
-          Portfolio
-        </h1>
-      </div>
-
-      <!-- Link Section -->
-      <div
-        class="flex flex-row justify-center content-center items-center gap-10"
-      >
-        <a href="" class="text-xl text-white hover:underline font-de-valencia"
-          >Home</a
-        >
-        <a
-          href="#skill"
-          class="text-xl text-white hover:underline font-de-valencia"
-          >Skills</a
-        >
-        <a href="#project" class="text-xl text-white hover:underline font-de-valencia"
-          >Projects</a
-        >
-        <a href="#contact-us" class="text-xl text-white hover:underline font-de-valencia"
-          >Contact Us</a
-        >
-        <div
-          class="flex border-3 bg-gradient-to-r from-blue-500 to-purple-600 p-2 rounded-full hover:border-white"
-        >
-          <a
-            href="https://github.com/Littlesaru"
-            class="text-xl text-white hover:underline"
-          >
-            <img src="../img/github.svg" alt="github" class="size-6" />
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    <main
-      class="bg-[url('../img/star.jpg')] flex items-center justify-between bg-center h-[100vh]"
-    >
-      <!-- Home -->
-      <div class="flex w-full justify-between pt-[75px]">
-        <div class="flex flex-col gap-9 w-[650px] mx-[40px] p-[30px]">
-          <h1
-            class="text-white text-3xl tracking-[0.3rem] border-2 border-[#b345f7] w-fit px-[30px] py-[10px] bg-gradient-to-r from-blue-500 to-purple-600 font-eotg"
-          >
-            Welcome to My Portfolio
-          </h1>
-          <h1
-            class="text-white text-5xl font-extrabold tracking-[0.4rem] leading-15 font-eotg"
-          >
-            Hi I am Junior Web Developer
-          </h1>
-          <p class="text-white text-2xl tracking-[0.2rem] font-de-valencia">
-            I enjoy working with HTML, CSS, JavaScript, Tailwind CSS, and React
-            to create smooth user experiences. All members in our team are quick
-            learners and love turning ideas into functional, clean designs.
-          </p>
-
-          <a
-            href="#contact-us"
-            class="text-white text-3xl tracking-[0.3rem] border-2 border-[#b345f7] w-fit px-[30px] py-[10px] bg-gradient-to-r from-blue-500 to-purple-600 font-eotg"
-            >Contact Us ➡️</a
-          >
-        </div>
-
-        <div class="mx-[40px] py-[130px] px-[130px]">
-          <img
-            src="../img/spaceIcon.png"
-            alt="spaceIcon"
-            class="animate-pulse"
-          />
-        </div>
-      </div>
-    </main>
-    <!-- Home End-->
-
-    <!-- Skills -->
-    <div class="p-10 flex flex-col justify-center items-center" id="skill">
-      <h1 class="text-5xl text-white font-eotg tracking-[0.4rem]">Skills</h1>
-
-      <div class="flex flex-row gap-10 mt-10 justify-center items-center">
-        <!-- HTML Icon -->
-        <div
-          class="p-[20px] rounded-full bg-gradient-to-r from-purple-600 to-blue-500 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 transition-all duration-500 transform hover:scale-110 cursor-pointer"
-        >
-          <div class="bg-white p-[54px] rounded-full">
-            <img
-              src="../img/html-5-logo-svgrepo-com.svg"
-              alt=""
-              width="70px"
-              height="70px"
-            />
-          </div>
-        </div>
-
-        <!-- CSS Icon -->
-        <div
-          class="p-[20px] rounded-full bg-gradient-to-r from-purple-600 to-blue-500 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 transition-all duration-500 transform hover:scale-110 cursor-pointer"
-        >
-          <div class="bg-white p-[54px] rounded-full">
-            <img
-              src="../img/css-3-logo-svgrepo-com.svg"
-              alt=""
-              width="70px"
-              height="70px"
-            />
-          </div>
-        </div>
-
-        <!-- JS Icon -->
-        <div
-          class="p-[20px] rounded-full bg-gradient-to-r from-purple-600 to-blue-500 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 transition-all duration-500 transform hover:scale-110 cursor-pointer"
-        >
-          <div class="bg-white p-[54px] rounded-full">
-            <img
-              class="rounded-[20px]"
-              src="../img/javascript-logo-svgrepo-com.svg"
-              alt=""
-              width="70px"
-              height="70px"
-            />
-          </div>
-        </div>
-
-        <!-- React Icon -->
-        <div
-          class="p-[20px] rounded-full bg-gradient-to-r from-purple-600 to-blue-500 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 transition-all duration-500 transform hover:scale-110 cursor-pointer"
-        >
-          <div class="bg-white p-[54px] rounded-full">
-            <img
-              class="rounded-[20px]"
-              src="../img/react-1-logo-svgrepo-com.svg"
-              alt=""
-              width="70px"
-              height="70px"
-            />
-          </div>
-        </div>
-        <!-- Tailwind Icon -->
-        <div
-          class="p-[20px] rounded-full bg-gradient-to-r from-purple-600 to-blue-500 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 transition-all duration-500 transform hover:scale-110 cursor-pointer"
-        >
-          <div class="bg-white p-[54px] rounded-full">
-            <img
-              class="rounded-[20px]"
-              src="../img/tailwindcss-icon-svgrepo-com.svg"
-              alt=""
-              width="70px"
-              height="70px"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Skills End-->
-
-    <!-- About -->
-    <!-- <div class="p-10" id="about">
-      <div class="flex gap-4 px-[30px]">
-        <h1 class="text-white text-5xl font-eotg tracking-[0.4rem]">
-          Our Teams
-        </h1>
-        <img src="../img/star.png" alt="" />
-      </div>
-
-      <div class="px-[30px] grid grid-cols-3 gap-5 mt-[40px]">
-        Member 1
-        <div
-          class="bg-gradient-to-tr from-yellow-200 to-purple-300 p-[1px] rounded-2xl"
-        >
-          <div class="bg-[#0f0f0f] rounded-2xl p-6 text-white">
-            <div class="flex items-start justify-between">
-              <div class="flex items-center gap-5">
-                <div class="w-10 h-10 bg-gray-500 rounded-full"></div>
-                <div>
-                  <p class="font-semibold text-white">
-                    Phone Myat Thaw <span class="text-white">.</span>
-                  </p>
-                  <p class="text-sm text-gray-400">Web Developer</p>
-                </div>
-              </div>
-              <div class="text-3xl">
-                <img src="../img/for_about.png" alt="" />
-              </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Happy Birthday | Sulaiman Codes">
+    <meta name="github" content="https://github.com/sulaimancodesnew/">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="website icon" type="png" href="image/heart.png"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Have a Happy Birthday!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="boxcontainer">
+            <div class="image">
+                <img src="flag.png" alt="">
             </div>
-            <p class="mt-4 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consectetur ad praesentium rem animi ratione mollitia voluptatem
-              voluptate impedit reiciendis magni, commodi vitae eveniet nobis
-              quos beatae? Illo earum ducimus velit!
-            </p>
-          </div>
-        </div>
-        Member 2
-        <div
-          class="bg-gradient-to-tr from-yellow-200 to-purple-300 p-[1px] rounded-2xl"
-        >
-          <div class="bg-[#0F0F0F] rounded-2xl p-6 text-white">
-            <div class="flex items-start justify-between">
-              <div class="flex items-center gap-5">
-                <div class="w-10 h-10 bg-gray-500 rounded-full"></div>
-                <div>
-                  <p class="font-semibold text-white">
-                    Han Myo Htet <span class="text-white">.</span>
-                  </p>
-                  <p class="text-sm text-gray-400">Web Developer</p>
-                </div>
-              </div>
-              <div class="text-3xl">
-                <img src="../img/for_about.png" alt="" />
-              </div>
+            <div class="text-happybirthday">
+                <img src="texthappy.png" alt="">
             </div>
-            <p class="mt-4 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              eius aliquid perferendis id culpa odio modi. Consequatur
-              laudantium, at, excepturi vel molestiae perferendis ab alias odit
-              vitae nesciunt sunt nihil.
-            </p>
-          </div>
-        </div>
-        Member 3
-        <div
-          class="bg-gradient-to-tr from-yellow-200 to-purple-300 p-[1px] rounded-2xl"
-        >
-          <div class="bg-[#0F0F0F] rounded-2xl p-6 text-white">
-            <div class="flex items-start justify-between">
-              <div class="flex items-center gap-5">
-                <div class="w-10 h-10 bg-gray-500 rounded-full"></div>
-                <div>
-                  <p class="font-semibold text-white">
-                    Arr Mann <span class="text-white">.</span>
-                  </p>
-                  <p class="text-sm text-gray-400">web Developer</p>
-                </div>
-              </div>
-              <div class="text-3xl">
-                <img src="../img/for_about.png" alt="" />
-              </div>
+            <div class="cake">
+                <img src="cake.png" alt="">
             </div>
-            <p class="mt-4 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              corporis iusto quae quis, laboriosam sed nisi officia at dicta
-              voluptatem delectus nemo? Unde sunt at, commodi esse tempora
-              veniam amet.
-            </p>
-          </div>
+            <div class="box-balloon">
+                <div class="balloon-item1">
+                    <img src="balloon.png" alt="">
+                </div>
+                <div class="balloon-item1">
+                    <img src="balloon.png" alt="">
+                </div>
+            </div>
+            <div class="box-cloud">
+                <div class="cloud">
+                    <img src="cloud.png" alt="">
+                </div>
+                <div class="cloud">
+                    <img src="cloud.png" alt="">
+                </div>
+            </div>
+            <div class="box-firework">
+                <div class="firework">
+                    <img src="firework.png" alt="">
+                    <img src="firework1.png" alt="" id="firework1">
+                </div>
+                <div class="firework">
+                    <img src="firework.png" alt="">
+                    <img src="firework1.png" alt="" id="firework1">
+                </div>
+            </div>
+            <div class="paperCannons">
+                <img src="paperCannons1.png" alt="">
+            </div>
+            <div class="box-giftbox">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+            </div>
+            <div class="mail">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="boxcute">
+                <div class="cute1">
+                    <img src="cute.png" alt="">
+                </div>
+                <div class="cute2">
+                    <img src="cute.png" alt="">
+                </div>
+            </div>
         </div>
-      </div>
-    </div> -->
-    <!-- About End -->
+        <div class="boxMail">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="boxMail-container">
+                <div class="card1">
+                    <div class="userImg">
+                        <img src="Yoon.jpg" alt="">
+                    </div>
+                    <h4 class="username">To: Yoon 💖<span class="underline">~</span></h4>
 
-    <!-- Projects -->
-    <h1 class="text-5xl text-white font-eotg tracking-[0.4rem] px-[70px] py-5" id="project">
-      Projects
-    </h1>
-    <!-- Swiper HTML -->
-    <div class="swiper">
-      <h1></h1>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div>
-            <img
-              src="../img/HomeLiving.jpg"
-              alt="D&G Home Living"
-              class="border-2 border-white-500 shadow-xl shadow-cyan-500/50 w-[1000px] h-[400px]"
-            />
-          </div>
-
-          <div class="w-[500px] flex flex-col content-center pt-15">
-            <h1 class="text-white text-3xl font-de-valencia px-5 py-3">
-              D&G Home Living
-            </h1>
-            <p
-              class="text-white px-5 py-3 font-de-valencia text-xl tracking-normal"
-            >
-              This website is for Home manufacturing company of D&G Home Living.
-              I built it by using HTML and Tailwind Css.
-            </p>
-            <a
-              href="https://github.com/Littlesaru/D-H-Home-Living"
-              class="mt-5 text-white text-sm px-3 py-2 border-2 border-white w-fit ml-5 rounded-2xl hover:bg-gradient-to-r from-blue-500 to-purple-600"
-              >More Details</a
-            >
-          </div>
+                    <h3>Happy Birthday</h3>
+                    <div class="imageCute">
+                        <img src="cute1.png" alt="">
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card2-content">
+                        <h3>To You!</h3>
+                        <h2>
+                            Oh my goodness! Today is a very special day for a very special person.
+                            I wish you a birthday filled with meaning, joy, and happiness alongside your family and friends.
+                            May your new year be full of endless cheer and delight, making you shine brighter than ever.
+                            I hope you excel in your studies while taking good care of your health, and that you soon find the love you desire.
+                            Finally, I wish you the happiest birthday ever. May all the best things come your way!
+                        </h2>
+                        <div class="imageCute2">
+                            <img src="cute2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="swiper-slide">
-          <div>
-            <img
-              src="../img/Work.jpg"
-              alt=""
-              class="border-2 border-white-500 shadow-xl shadow-cyan-500/50 w-[1000px] h-[400px]"
-            />
-          </div>
-
-          <div class="w-[500px] flex flex-col content-center pt-15">
-            <h1 class="text-white text-3xl font-de-valencia px-5 py-3">
-              UI/UX Design Company
-            </h1>
-            <p
-              class="text-white px-5 py-3 font-de-valencia text-xl tracking-normal"
-            >
-              This is my first project where I designed a responsive website for
-              a UI/UX company. The site was built using HTML, Tailwind CSS and
-              JavaScript. Due to company confidentiality, I am unable to share
-              additional images or detailed information about this project.
-            </p>
-          </div>
-        </div>
-
-        <!-- Add more slides as needed -->
-      </div>
-      <!-- Add pagination/navigation if you want -->
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
     </div>
-    <!-- Projects End -->
 
-    <!-- Contact Us -->
-    <div
-      class="flex p-10 flex-col justify-center items-center bg-[url('../img/star.jpg')]" id="contact-us"
-    >
-      <form
-        onsubmit="sendEmail(event)"
-        class="p-10 border-2 rounded-3xl border-white"
-      >
-        <h1 class="text-5xl text-white font-eotg tracking-[0.4rem]">
-          Contact Us
-        </h1>
-        <div class="flex flex-col gap-5 mt-10">
-          <input
-            type="text"
-            placeholder="Name"
-            id="name"
-            class="w-[500px] h-[50px] rounded-full bg-[#0f0f0f] text-white px-5 border-1 border-white"
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            class="w-[500px] h-[50px] rounded-full bg-[#0f0f0f] text-white px-5 border-1 border-white"
-          />
-          <textarea
-            name="body"
-            id="body"
-            cols="30"
-            rows="10"
-            placeholder="Message"
-            class="w-[500px] h-[200px] rounded-2xl bg-[#0f0f0f] text-white px-5 border-1 border-white"
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          class="mt-10 w-fit h-fit px-10 py-3 rounded-full tracking-[0.4rem] bg-gradient-to-r from-blue-500 to-purple-600 text-white font-eotg hover:bg-gradient-to-l hover:from-blue-500 hover:to-purple-600 transition-all duration-500 transform hover:scale-110 cursor-pointer"
-        >
-          Submit
-        </button>
-      </form>
-    </div>
-    <!-- Contact Us End-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="js/functions.js"></script>
-  </body>
+    
+</body>
+    <script>
+        document.addEventListener('mousemove', function(e){
+            let body = document.querySelector('body');
+            let heart = document.createElement('span');
+            let x = e.offsetX;
+            let y = e.offsetY;
+            heart.style.left = x+'px';
+            heart.style.top = y+'px';
+
+            let size = Math.random() * 10;
+            heart.style.width = 4 * size+'px';
+            heart.style.height = 4 * size+'px';
+
+            let transformValue = Math.random() * 360;
+            heart.style.transform = 'rotate('+ transformValue +'deg)';
+
+            body.appendChild(heart);
+
+            setTimeout(function(){
+                heart.remove();
+            },1000)
+        })
+
+        let mailBox = document.querySelector('.mail')
+        let boxmail = document.querySelector('.boxMail')
+        var close = document.querySelector('.fa-xmark')
+        mailBox.onclick = function(){
+            mailBox.classList.toggle('active')
+            boxmail.classList.add('active')
+        }
+
+        close.addEventListener('click', function(){
+            boxmail.classList.remove('active')
+        })
+    </script>
 </html>
-<!-- Swiper library -->
